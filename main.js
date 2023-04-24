@@ -54,12 +54,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('images/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/dc0rv28n2/image/upload/v1682349665/Juana%20Bonita/space_ecjyvs.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const picTexture = new THREE.TextureLoader().load('images/LOGOTIPO.png');
+const picTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/dc0rv28n2/image/upload/v1682349665/Juana%20Bonita/LOGOTIPO_rxw1pq.png');
 
 const pic = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: picTexture }));
 
@@ -67,8 +67,8 @@ scene.add(pic);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('images/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('images/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/dc0rv28n2/image/upload/v1682349665/Juana%20Bonita/moon_cascrg.jpg');
+const normalTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/dc0rv28n2/image/upload/v1682349666/Juana%20Bonita/normal_tqwxih.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
